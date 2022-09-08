@@ -3,6 +3,6 @@ steps:
     entrypoint: mvn
     args: ['package','-Dmaven.test.skip=true']
   - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '-t', 'us-west2-docker.pkg.dev/bootcamp-361907/quickstart-docker-repo/quickstart-image:tag1', '.' ]
+    args: [ 'build', '-t', 'us-west2-docker.pkg.dev/bootcamp-361907/quickstart-docker-repo/bootcamp-image:tag1', '.' ]
 images:
   - 'us-west2-docker.pkg.dev/bootcamp-361907/quickstart-docker-repo/bootcamp-image:tag1'
