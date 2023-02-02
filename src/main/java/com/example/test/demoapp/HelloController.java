@@ -12,4 +12,8 @@ public class HelloController {
     public String helloWorld(String name){
         return "Hello World of Railways";
     }
+    @Service
+    @PostMapping(){
+        String test = "test";   
+    }
 }
